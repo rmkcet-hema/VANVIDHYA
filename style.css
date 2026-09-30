@@ -1,0 +1,559 @@
+/* =========================================================
+   VANVIDHYA — COMMON UI THEME
+   Velvet Green + Ivory + Antique Gold
+   ========================================================= */
+
+
+/* =========================================================
+   GOOGLE FONTS
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap');
+
+
+/* =========================================================
+   GLOBAL APP
+   ========================================================= */
+
+html,
+body,
+[class*="css"] {
+    font-family: 'Inter', sans-serif;
+}
+
+.stApp {
+    background:
+        radial-gradient(
+            circle at 85% 10%,
+            rgba(82, 130, 91, 0.13),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 10% 85%,
+            rgba(201, 168, 93, 0.06),
+            transparent 25%
+        ),
+        linear-gradient(
+            135deg,
+            #041F18 0%,
+            #063328 48%,
+            #05271F 100%
+        );
+
+    color: #F5F2E8;
+    min-height: 100vh;
+}
+
+
+/* =========================================================
+   HIDE STREAMLIT DEFAULT UI
+   ========================================================= */
+
+[data-testid="stSidebar"] {
+    display: none;
+}
+
+[data-testid="collapsedControl"] {
+    display: none;
+}
+
+#MainMenu {
+    visibility: hidden;
+}
+
+footer {
+    visibility: hidden;
+}
+
+header {
+    background: transparent !important;
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+   ========================================================= */
+
+.block-container {
+    max-width: 1380px;
+
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+
+/* =========================================================
+   TEXT
+   ========================================================= */
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Poppins', sans-serif !important;
+    color: #F5F2E8 !important;
+}
+
+p,
+span,
+label {
+    color: #E8E5DB;
+}
+
+
+/* =========================================================
+   TOP BRAND
+   ========================================================= */
+
+.vv-brand {
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 26px;
+    font-weight: 700;
+
+    letter-spacing: 2.5px;
+
+    color: #F7F3E8;
+}
+
+.vv-gold {
+    color: #D2B56A;
+}
+
+
+/* =========================================================
+   PAGE HEADER
+   ========================================================= */
+
+.page-header {
+    padding-bottom: 20px;
+
+    margin-bottom: 28px;
+
+    border-bottom:
+        1px solid rgba(201,168,93,0.18);
+}
+
+.page-title {
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 32px;
+    font-weight: 600;
+
+    color: #F7F3E8;
+
+    margin-bottom: 6px;
+}
+
+.page-subtitle {
+    font-size: 14px;
+
+    color: rgba(245,242,232,0.62);
+}
+
+
+/* =========================================================
+   CARDS
+   ========================================================= */
+
+.vv-card {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(20,75,57,0.82),
+            rgba(5,42,32,0.90)
+        );
+
+    border:
+        1px solid rgba(104,151,121,0.34);
+
+    border-radius: 16px;
+
+    padding: 24px;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.03),
+        0 12px 30px rgba(0,0,0,0.14);
+
+    transition: 0.25s ease;
+}
+
+.vv-card:hover {
+    border-color:
+        rgba(210,181,106,0.50);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   GOLD ACCENT CARD
+   ========================================================= */
+
+.vv-card-gold {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(20,75,57,0.85),
+            rgba(5,42,32,0.92)
+        );
+
+    border:
+        1px solid rgba(201,168,93,0.50);
+
+    border-radius: 16px;
+
+    padding: 24px;
+}
+
+
+/* =========================================================
+   METRIC CARDS
+   ========================================================= */
+
+.metric-card {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(18,70,53,0.90),
+            rgba(5,39,30,0.95)
+        );
+
+    border:
+        1px solid rgba(104,151,121,0.30);
+
+    border-radius: 14px;
+
+    padding: 20px;
+
+    min-height: 120px;
+}
+
+.metric-label {
+    font-size: 12px;
+
+    color:
+        rgba(245,242,232,0.58);
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+.metric-value {
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 28px;
+
+    font-weight: 600;
+
+    color: #F5F2E8;
+
+    margin-top: 8px;
+}
+
+.metric-accent {
+    color: #D2B56A;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+div.stButton > button {
+    background: #D2B56A;
+
+    color: #09251D;
+
+    border:
+        1px solid #DCC37F;
+
+    border-radius: 30px;
+
+    min-height: 45px;
+
+    padding: 0 25px;
+
+    font-family: 'Inter', sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 7px 18px rgba(0,0,0,0.18);
+
+    transition: all 0.25s ease;
+}
+
+div.stButton > button:hover {
+    background: #E0C77D;
+
+    color: #09251D;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 24px rgba(0,0,0,0.25);
+}
+
+
+/* =========================================================
+   INPUTS
+   ========================================================= */
+
+.stTextInput input,
+.stNumberInput input,
+.stSelectbox div[data-baseweb="select"] > div,
+.stTextArea textarea {
+    background: #092E24 !important;
+
+    color: #F5F2E8 !important;
+
+    border:
+        1px solid rgba(104,151,121,0.45) !important;
+
+    border-radius: 10px !important;
+}
+
+.stTextInput input:focus,
+.stNumberInput input:focus,
+.stTextArea textarea:focus {
+    border-color:
+        #D2B56A !important;
+
+    box-shadow:
+        0 0 0 1px #D2B56A !important;
+}
+
+
+/* =========================================================
+   SELECT BOX
+   ========================================================= */
+
+[data-baseweb="select"] {
+    background: #092E24 !important;
+}
+
+[data-baseweb="popover"] {
+    background: #092E24 !important;
+}
+
+[role="option"] {
+    background: #092E24 !important;
+    color: #F5F2E8 !important;
+}
+
+[role="option"]:hover {
+    background: #124C39 !important;
+}
+
+
+/* =========================================================
+   FILE UPLOADER
+   ========================================================= */
+
+[data-testid="stFileUploader"] {
+    background:
+        rgba(9,46,36,0.80);
+
+    border:
+        1px dashed rgba(201,168,93,0.45);
+
+    border-radius: 14px;
+
+    padding: 10px;
+}
+
+
+/* =========================================================
+   INFO / SUCCESS / WARNING
+   ========================================================= */
+
+[data-testid="stAlert"] {
+    background:
+        rgba(8,48,37,0.85) !important;
+
+    border-radius: 12px !important;
+
+    color: #F5F2E8 !important;
+}
+
+
+/* =========================================================
+   PROGRESS BAR
+   ========================================================= */
+
+[data-testid="stProgressBar"] > div > div > div {
+    background: #D2B56A !important;
+}
+
+
+/* =========================================================
+   DIVIDER
+   ========================================================= */
+
+hr {
+    border-color:
+        rgba(201,168,93,0.16) !important;
+}
+
+
+/* =========================================================
+   STATUS BADGES
+   ========================================================= */
+
+.status-success {
+    display: inline-block;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    background:
+        rgba(58,130,87,0.18);
+
+    color: #9ED4A8;
+
+    border:
+        1px solid rgba(91,170,113,0.30);
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+.status-pending {
+    display: inline-block;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    background:
+        rgba(201,168,93,0.14);
+
+    color: #DCC37F;
+
+    border:
+        1px solid rgba(201,168,93,0.30);
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+.status-danger {
+    display: inline-block;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    background:
+        rgba(170,75,65,0.16);
+
+    color: #E5A09A;
+
+    border:
+        1px solid rgba(190,90,80,0.30);
+
+    font-size: 12px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   SECTION TITLE
+   ========================================================= */
+
+.section-title {
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 24px;
+
+    font-weight: 600;
+
+    color: #F5F2E8;
+
+    margin-bottom: 6px;
+}
+
+.section-subtitle {
+    font-size: 13px;
+
+    color:
+        rgba(245,242,232,0.58);
+
+    margin-bottom: 22px;
+}
+
+
+/* =========================================================
+   GOLD LINE
+   ========================================================= */
+
+.gold-line {
+    width: 55px;
+
+    height: 2px;
+
+    background: #C9A85D;
+
+    margin: 10px 0 20px 0;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.vv-footer {
+    text-align: center;
+
+    margin-top: 50px;
+
+    padding-top: 25px;
+
+    border-top:
+        1px solid rgba(201,168,93,0.16);
+
+    color:
+        rgba(245,242,232,0.48);
+
+    font-size: 12px;
+}
+
+.vv-footer-brand {
+    font-family: 'Poppins', sans-serif;
+
+    color: #D2B56A;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .block-container {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .page-title {
+        font-size: 26px;
+    }
+
+    .metric-value {
+        font-size: 23px;
+    }
+
+}
